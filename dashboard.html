@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Office Dashboard</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      min-height: 100vh;
+      padding-bottom: 50px;
+    }
+
+    header {
+      padding: 2em;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.3);
+      font-size: 2em;
+    }
+
+    .dashboard {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2em;
+      padding: 2em;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 2em;
+      border-radius: 16px;
+      width: 250px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h2 {
+      font-size: 1.4em;
+      margin-bottom: 0.5em;
+    }
+
+    .card p {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .form-section {
+      background: rgba(255, 255, 255, 0.1);
+      margin: 3em auto;
+      padding: 2em;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 16px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+    }
+
+    .form-section h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2em;
+    }
+
+    label {
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    input {
+      padding: 0.8em;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      margin-top: 0.4em;
+    }
+
+    button {
+      background-color: #ff6b6b;
+      color: white;
+      border: none;
+      padding: 0.9em;
+      font-size: 1em;
+      border-radius: 8px;
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5em;
+      font-size: 0.9em;
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌟 Office Dashboard</h1>
+  </header>
+
+  <section class="dashboard">
+    <div class="card">
+      <h2>Total Employees</h2>
+      <p>25</p>
+    </div>
+    <div class="card">
+      <h2>Monthly Reports</h2>
+      <p>5 submitted</p>
+    </div>
+    <div class="card">
+      <h2>Pending Tasks</h2>
+      <p>12 tasks</p>
+    </div>
+  </section>
+
+  <section class="form-section">
+    <h2>🛠 Update Dashboard Info</h2>
+    <form>
+      <label>Total Employees:
+        <input type="text" placeholder="Enter number">
+      </label>
+      <label>Monthly Reports:
+        <input type="text" placeholder="e.g., 6 submitted">
+      </label>
+      <label>Pending Tasks:
+        <input type="text" placeholder="e.g., 10 tasks">
+      </label>
+      <button type="button">🚀 Update</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Office Dashboard • Designed with ❤️</p>
+  </footer>
+</body>
+</html>
